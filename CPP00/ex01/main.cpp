@@ -11,7 +11,8 @@ int	main(void)	{
 		ADD: save a new contact\n \
 		SEARCH: display a specific contact\n \
 		EXIT" << std::endl;
-		std::getline(std::cin, cmd);
+		if (!std::getline(std::cin, cmd))
+			break;
 		if (cmd == "EXIT")
 			break;
 		else if (cmd == "ADD")
