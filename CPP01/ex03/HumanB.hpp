@@ -8,9 +8,9 @@ private:
 	Weapon *weapon;
 	std::string name;
 public:
-	HumanB(std::string name);
-	void	attack(std::string name, Weapon weapon);
-	void	setWeapon(Weapon *weapon);
+	HumanB(std::string n);
+	void	attack();
+	void	setWeapon(Weapon &w);
 };
 
 #endif
